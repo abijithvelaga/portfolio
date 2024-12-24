@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abijith Velaga Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        nav {
+            background-color: #222;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: #fff;
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+        nav a:hover {
+            color: #f0a500;
+        }
+        header {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .header-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+        }
+        .btn-primary {
+            margin-top: 1rem;
+            background-color: #f0a500;
+            border-color: #f0a500;
+        }
+        .btn-primary:hover {
+            background-color: #d18d00;
+            border-color: #d18d00;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            color: #222;
+        }
+        .skills .skill-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.2rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .skills .skill-card h5 {
+            color: #f0a500;
+        }
+        /* Experience Section */
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #ddd;
+        }
+        .timeline-item {
+            display: flex;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: #f0a500;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+        .timeline-content {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            margin: 0 2rem;
+        }
+        .timeline-image {
+            flex: 0 0 150px;
+            text-align: center;
+        }
+        .timeline-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .projects .project-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .projects .project-card img {
+            width: 100%;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        footer a {
+            color: #f0a500;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Abijith Velaga</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <h1>Abijith Velaga</h1>
+        <p>Full Stack Developer | React, Java, AWS</p>
+        <div class="header-icons">
+            <a href="https://github.com/abijithvelaga" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/abijithvelaga" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="mailto:velagaabi@gmail.com" class="btn btn-primary btn-lg">Hire Me</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5 text-center">
+        <img src="https://via.placeholder.com/150" alt="Profile" class="rounded-circle mb-4" style="width: 150px;">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a passionate Full Stack Developer with a strong foundation in Computer Science. With over 1 year of professional experience, I create scalable applications using React, Java, Spring Boot, AWS, and more. I aim to deliver impactful solutions and thrive on solving complex challenges.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills bg-light py-5">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-3 skill-card">
+                    <h5>Languages</h5>
+                    <p>Java, Python, JavaScript, Node.js, C</p>
+                </div>
+                <div class="col-md-3 skill-card">
+                    <h5>Frameworks</h5>
+                    <p>React.js, Next.js, Redux, Spring Boot</p>
+                </div>
+                <div class="col-md-3 skill-card">
+                    <h5>Tools</h5>
+                    <p>Kubernetes, Jenkins, Docker, AWS</p>
+                </div>
+                <div class="col-md-3 skill-card">
+                    <h5>Databases</h5>
+                    <p>MongoDB, Oracle, SQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience bg-light py-5">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Full Stack Developer</h4>
+                        <h6>July 2024 - Present | Charlotte,NC</h6>
+                        <p>Developed a secure messaging app using Diffie-Hellman Key Exchange and AES encryption, hosted on AWS.</p>
+                        <p><strong>Technologies:</strong> React, AWS, Spring Boot</p>
+                    </div>
+                    <div class="timeline-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wells_Fargo_Logo_%282020%29.svg/1200px-Wells_Fargo_Logo_%282020%29.svg.png" alt="WellsFargo">
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Frontend Developer</h4>
+                        <h6>August 2023 - June 2024 | Plano,TX</h6>
+                        <p>Designed a React Native app to connect students and teachers, improving engagement by 30%.</p>
+                        <p><strong>Technologies:</strong> React Native</p>
+                    </div>
+                    <div class="timeline-image">
+                        <img src="https://yt3.googleusercontent.com/6PxUlBGrGhnKWXjikxct_PYoMKYpfQEBCs-8prR9U2IQTqhVjIyyv8Y6oNJklssRAV6zZvAMZg=s900-c-k-c0x00ffffff-no-rj" alt="AT&T">
+                    </div>
+                </div>
+
+                <!-- Additional experiences go here -->
+                 <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Full Stack Developer</h4>
+                        <h6>July 2024 - Present | Charlotte,NC</h6>
+                        <p>Developed a secure messaging app using Diffie-Hellman Key Exchange and AES encryption, hosted on AWS.</p>
+                        <p><strong>Technologies:</strong> React, AWS, Spring Boot</p>
+                    </div>
+                    <div class="timeline-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wells_Fargo_Logo_%282020%29.svg/1200px-Wells_Fargo_Logo_%282020%29.svg.png" alt="WellsFargo">
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Frontend Developer</h4>
+                        <h6>August 2023 - June 2024 | Plano,TX</h6>
+                        <p>Designed a React Native app to connect students and teachers, improving engagement by 30%.</p>
+                        <p><strong>Technologies:</strong> React Native</p>
+                    </div>
+                    <div class="timeline-image">
+                        <img src="https://yt3.googleusercontent.com/6PxUlBGrGhnKWXjikxct_PYoMKYpfQEBCs-8prR9U2IQTqhVjIyyv8Y6oNJklssRAV6zZvAMZg=s900-c-k-c0x00ffffff-no-rj" alt="AT&T">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects bg-light py-5">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <!-- Row 1 -->
+            <div class="row g-4 py-2">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Secure Text Transfer">
+                        <h5 class="mt-2 px-2">Secure Text Transfer</h5>
+                        <p class="px-2">Developed a secure messaging app using Diffie-Hellman Key Exchange and AES encryption, hosted on AWS.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Educational Mobile App">
+                        <h5 class="mt-2 px-2">Educational Mobile App</h5>
+                        <p class="px-2">Designed a React Native app to connect students and teachers, improving engagement by 30%.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row g-4 py-2">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Secure Text Transfer">
+                        <h5 class="mt-2 px-2">Secure Text Transfer</h5>
+                        <p class="px-2">Developed a secure messaging app using Diffie-Hellman Key Exchange and AES encryption, hosted on AWS.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Educational Mobile App">
+                        <h5 class="mt-2 px-2">Educational Mobile App</h5>
+                        <p class="px-2">Designed a React Native app to connect students and teachers, improving engagement by 30%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2024 Abijith Velaga | <a href="https://github.com/abijithvelaga" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/abijithvelaga" target="_blank">LinkedIn</a></p>
+        <p>Email: <a href="mailto:velagaabi@gmail.com">velagaabi@gmail.com</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
