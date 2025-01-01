@@ -64,27 +64,78 @@
     <!-- Skills Section -->
     <section id="skills" class="skills bg-light py-5">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="row g-4">
-                <div class="col-md-3 skill-card">
-                    <h5>Languages</h5>
-                    <p>Java, Python, JavaScript, Node.js, C</p>
+            <h2 class="section-title1 text-center mb-4">Skills</h2>
+            <div class="row text-center g-4">
+                <!-- Programming Languages -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card shadow-sm p-4 rounded bg-white">
+                        <i class="fas fa-code fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-3">Programming Languages</h5>
+                        <p>Java, Python, JavaScript, SQL</p>
+                    </div>
                 </div>
-                <div class="col-md-3 skill-card">
-                    <h5>Frameworks</h5>
-                    <p>React.js, Next.js, Redux, Spring Boot</p>
+                <!-- Frameworks -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card shadow-sm p-4 rounded bg-white">
+                        <i class="fas fa-layer-group fa-2x text-success mb-3"></i>
+                        <h5 class="mb-3">Frameworks</h5>
+                        <p>Spring Boot, Spring Cloud, Spring MVC, Express.js, React.js, Redux, Next.js</p>
+                    </div>
                 </div>
-                <div class="col-md-3 skill-card">
-                    <h5>Tools</h5>
-                    <p>Kubernetes, Jenkins, Docker, AWS</p>
+                <!-- Technologies -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card shadow-sm p-4 rounded bg-white">
+                        <i class="fas fa-cogs fa-2x text-warning mb-3"></i>
+                        <h5 class="mb-3">Technologies</h5>
+                        <p>Kafka, Node.js, Docker, Kubernetes, AWS, RESTful APIs</p>
+                    </div>
                 </div>
-                <div class="col-md-3 skill-card">
-                    <h5>Databases</h5>
-                    <p>MongoDB, Oracle, SQL</p>
+                <!-- Web Development -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card shadow-sm p-4 rounded bg-white">
+                        <i class="fas fa-desktop fa-2x text-danger mb-3"></i>
+                        <h5 class="mb-3">Web Development</h5>
+                        <p>Bootstrap, HTML, CSS, TypeScript, AJAX, JSON, XML</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center g-4 mt-4">
+                <!-- Databases -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card shadow-sm p-4 rounded bg-white">
+                        <i class="fas fa-database fa-2x text-info mb-3"></i>
+                        <h5 class="mb-3">Databases</h5>
+                        <p>MySQL, MongoDB, PostgreSQL</p>
+                    </div>
+                </div>
+                <!-- Testing and Tools -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card shadow-sm p-4 rounded bg-white">
+                        <i class="fas fa-vial fa-2x text-secondary mb-3"></i>
+                        <h5 class="mb-3">Testing & Tools</h5>
+                        <p>JUnit, Cucumber, Postman, Splunk, Elastic APM</p>
+                    </div>
+                </div>
+                <!-- IDE and Platforms -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card shadow-sm p-4 rounded bg-white">
+                        <i class="fas fa-terminal fa-2x text-dark mb-3"></i>
+                        <h5 class="mb-3">IDE & Platforms</h5>
+                        <p>IntelliJ, VS Code, Eclipse, pgAdmin</p>
+                    </div>
+                </div>
+                <!-- Version Control and CI/CD -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card shadow-sm p-4 rounded bg-white">
+                        <i class="fas fa-code-branch fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-3">Version Control & CI/CD</h5>
+                        <p>Git, Jenkins</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <!-- Experience Section -->
     <section id="experience" class="experience bg-light py-5">
@@ -260,7 +311,27 @@
         <p>Email: <a href="mailto:velagaabi@gmail.com">velagaabi@gmail.com</a></p>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">⬆️</button>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Show or hide the button based on scroll position
+        window.onscroll = function () {
+            const button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    
+        // Scroll to the top when the button is clicked
+        document.getElementById("backToTop").onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>    
 </body>
 </html>
